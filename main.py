@@ -12,7 +12,7 @@ weather_data = response.json()['list'][0]['weather'][0]['id']
 
 
 for x in range(0,4):
-    print(response.json()['list'][x]['weather'][0]['id'])
+    print(response.json()['list'][x]['weather'][0]['main'])
     if int(response.json()['list'][x]['weather'][0]['id']) < 700:
         going_to_rain = True
 
